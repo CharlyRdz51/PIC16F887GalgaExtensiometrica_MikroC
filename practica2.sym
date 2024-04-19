@@ -1,0 +1,149 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-007 Medida
+008-00B Medicion
+00C-00F peso
+010-011 @sprintf_string
+012-015 @PRINTF_L32D_693FPFPF.P1
+012     @PSTRINGCN_693.P2
+012     lcd_init.i
+012-015 @DTOF.P1
+012     MAIN.@SCRATCH1
+012     @PSTRINGC_693.@SCRATCH1
+013-016 lcd_init.LCD_INIT_STRING
+013     MAIN.@SCRATCH2
+013     @PSTRINGC_693.@SCRATCH2
+013     @PSTRINGCN_693.@SCRATCH1
+014     MAIN.@SCRATCH3
+014     @PSTRINGCN_693.@SCRATCH2
+015     MAIN.@SCRATCH4
+016-019 @DIVFF.P1
+016     @PRINTF_L32D_693FPFPF.P2
+017     lcd_init.@SCRATCH1
+017     @PRINTF_L32D_693FPFPF.@SCRATCH1
+018     @PRINTF_L32D_693FPFPF.@SCRATCH2
+019     @PRINTF_L32D_693FPFPF.@SCRATCH3
+01A-01D @DIVFF.P1
+01A     @PRINTF_L32D_693FPFPF.@SCRATCH4
+01B     @PRINTF_L32D_693FPFPF.@SCRATCH5
+01C     @PRINTF_L32D_693FPFPF.@SCRATCH6
+01D     @PRINTF_L32D_693FPFPF.@SCRATCH7
+01E     @DIVFF.@SCRATCH1
+01E     @PRINTF_L32D_693FPFPF.@SCRATCH8
+01F-022 @DIV3232.P1
+01F-022 @FTOSD.P2
+01F     lcd_putc.c
+01F-022 @MULFF.P1
+01F     @DIVFF.@SCRATCH2
+020     lcd_gotoxy.x
+020     @delay_ms1.P1
+020     @DIVFF.@SCRATCH3
+021     lcd_gotoxy.y
+021     @DIVFF.@SCRATCH4
+022     lcd_gotoxy.address
+022     @DIVFF.@SCRATCH5
+023-026 @DIV3232.P1
+023-026 @MULFF.P2
+023     lcd_gotoxy.@SCRATCH1
+023     @DIVFF.@SCRATCH6
+023     @FTOSD.@SCRATCH1
+024     lcd_send_byte.address
+025     lcd_send_byte.n
+026     lcd_read_byte.low
+026     lcd_send_byte.@SCRATCH1
+027     lcd_read_byte.high
+027     lcd_send_nibble.n
+027     @MULFF.@SCRATCH1
+027     @DIV3232.@SCRATCH1
+028     lcd_read_nibble.n
+028     lcd_read_byte.@SCRATCH1
+028     @MULFF.@SCRATCH2
+028     @DIV3232.@SCRATCH2
+029     lcd_read_nibble.@SCRATCH1
+029     @MULFF.@SCRATCH3
+029     @DIV3232.@SCRATCH3
+02A     @DIV3232.@SCRATCH4
+02B     @DIV3232.@SCRATCH5
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @const711.call
+000016  @const716.call
+000020  @const717.call
+00002C  @const718.call
+000042  @const727.call
+00004C  @delay_ms1
+000066  lcd_send_nibble
+0000A4  lcd_read_nibble
+0000F6  lcd_read_byte
+00013E  lcd_send_byte
+000184  lcd_init
+000200  lcd_gotoxy
+000222  lcd_putc
+000272  @PSTRINGC_693
+000292  @DTOF
+0002C8  @MULFF
+0003BA  @DIVFF
+000516  @PSTRINGCN_693
+000536  @FTOSD
+000576  @DIV3232
+000604  @PRINTF_L32D_693FPFPF
+00077E  @cinit1
+00077E  MAIN
+0007AA  @cinit2
+
+Project Directory:
+    C:\Users\master\Desktop\SeminarioSensores\
+
+Project Files:
+    practica2.c                                             [07-dic-20 15:17  CRC=315A8A43]
+    ..\..\..\..\Program Files (x86)\PICC\devices\18F4550.h  [15-ene-18 15:57  CRC=06200171]
+    ..\..\..\..\Program Files (x86)\PICC\drivers\lcd.c      [22-feb-16 09:05  CRC=D1A6378A]
+
+Source signature=DAC6FAC8
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=35BE
+
+Units:
+    practica2 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   practica2.xsym
+    Errors:      practica2.err
+    Ext Symbols: practica2.esym
+    INHX32:      practica2.hex
+    Symbols:     practica2.sym
+    List:        practica2.lst
+    Debug/COFF:  practica2.cof
+    Project:     practica2.ccspjt
+    Call Tree:   practica2.tre
+    Statistics:  practica2.STA

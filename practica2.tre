@@ -1,0 +1,72 @@
+ÀÄpractica2
+   ÀÄMAIN  0/420  Ram=4
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄlcd_init  0/124  Ram=6
+      ³  ÃÄ@delay_ms1  0/26  Ram=1
+      ³  ÃÄlcd_send_nibble  0/62  Ram=1
+      ³  ÃÄ@delay_ms1  0/26  Ram=1
+      ³  ÃÄlcd_send_nibble  0/62  Ram=1
+      ³  ÃÄ@delay_ms1  0/26  Ram=1
+      ³  ÀÄlcd_send_byte  0/70  Ram=3
+      ³     ÃÄlcd_read_byte  0/72  Ram=3
+      ³     ³  ÃÄlcd_read_nibble  0/82  Ram=2
+      ³     ³  ÀÄlcd_read_nibble  0/82  Ram=2
+      ³     ÃÄlcd_send_nibble  0/62  Ram=1
+      ³     ÀÄlcd_send_nibble  0/62  Ram=1
+      ÃÄlcd_putc  0/80  Ram=1
+      ³  ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ³  ÀÄlcd_send_byte  0/70  Ram=3
+      ³  ³     ÀÄ*
+      ³  ÃÄlcd_send_byte  0/70  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/26  Ram=1
+      ³  ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_send_byte  0/70  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÀÄlcd_send_byte  0/70  Ram=3
+      ³     ÀÄ*
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC_693  0/32  Ram=2
+      ³  ÀÄlcd_putc  0/80  Ram=1
+      ³     ÀÄ*
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC_693  0/32  Ram=2
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/26  Ram=1
+      ÃÄlcd_putc  0/80  Ram=1
+      ³  ÀÄ*
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC_693  0/32  Ram=2
+      ³  ÀÄ*
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC_693  0/32  Ram=2
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/26  Ram=1
+      ÃÄlcd_putc  0/80  Ram=1
+      ³  ÀÄ*
+      ÃÄ@DTOF  0/54  Ram=4
+      ÃÄ@MULFF  0/242  Ram=11
+      ÃÄ@DIVFF  0/348  Ram=14
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PSTRINGCN_693  0/32  Ram=3
+      ³  ÀÄlcd_putc  0/80  Ram=1
+      ³     ÀÄ*
+      ÀÄ@PRINTF_L32D_693FPFPF  0/378  Ram=13
+         ÃÄ@MULFF  0/242  Ram=11
+         ÃÄ@FTOSD  0/64  Ram=5
+         ÃÄ@DIV3232  0/142  Ram=13
+         ÃÄlcd_putc  0/80  Ram=1
+         ³  ÀÄ*
+         ÃÄlcd_putc  0/80  Ram=1
+         ³  ÀÄ*
+         ÃÄlcd_putc  0/80  Ram=1
+         ³  ÀÄ*
+         ÃÄlcd_putc  0/80  Ram=1
+         ³  ÀÄ*
+         ÀÄ@DIV3232  0/142  Ram=13
